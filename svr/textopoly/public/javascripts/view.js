@@ -1,4 +1,4 @@
-var socket = io.connect('http://192.168.1.79');
+var socket = io.connect('http://data.textopoly.org');
 socket.on('book', function(data) {
 	var newTxt = $(document.createElement("div")).addClass("msg").addClass(data.s);
 	newTxt.attr('id','x'+(8000+data.p[0])+'y'+(8000+data.p[1]));
