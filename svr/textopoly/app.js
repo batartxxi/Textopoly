@@ -48,6 +48,10 @@ app.get('/section', routes.section);
 app.post('/insert', routes.insert);
 app.post('/remove', routes.remove);
 app.get('/view', routes.view);
+app.get('/mu-f4b76469-c351f596-a13a4cf0-5b357eeb',function(req,res)
+{
+res.send('42');
+});
 
 app.listen(3000);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
